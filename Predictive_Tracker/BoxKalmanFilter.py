@@ -1,6 +1,7 @@
 import numpy as np
 from filterpy.kalman import KalmanFilter
 
+#TODO fix orientition bug as in AB3DMOT 
 # (x, y, z, w, l, h, angle, v_x, v_y, v_z, v_angle)
 class BoxKalmanFilter():
     def __init__(self, box, id, type):
@@ -22,7 +23,7 @@ class BoxKalmanFilter():
                               [0,0,0,0,0,0,0,0,1,0,0],
                               [0,0,0,0,0,0,0,0,0,1,0],
                               [0,0,0,0,0,0,0,0,0,0,1]])  
-
+        # remove theta_V
         self.kf.H = np.array([[1,0,0,0,0,0,0,0,0,0,0], 
                               [0,1,0,0,0,0,0,0,0,0,0],
                               [0,0,1,0,0,0,0,0,0,0,0],
