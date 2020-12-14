@@ -98,7 +98,7 @@ The input to this approach is the 3D bounding-box inforamtion and its label ( np
  ```
 
  ## Probabilistic Tracker: 
-Probabilistic Tracke is an on-line tracking method. This code is based on technical report is available in [arxiv](https://arxiv.org/abs/2001.05673).
+Probabilistic Tracker is an on-line tracking method. Its code is based on [Probabilistic 3D Multi-Object Tracking for Autonomous Driving](https://arxiv.org/abs/2001.05673) report.
 
 ### How to implement:
 -- soon
